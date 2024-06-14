@@ -45,14 +45,15 @@ const SocialLinks = () => {
       download: true,
     },
   ];
+
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
-      <ul>
+    <div className="flex flex-col top-[35%] left-0 fixed lg:flex-row lg:top-auto lg:right-[35%] lg:left-auto lg:bottom-0 lg:fixed">
+      <ul className="flex flex-col lg:flex-row lg:space-x-4">
         {links.map(({ id, child, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
+              "flex justify-between items-center w-40 h-14 px-4 lg:w-52 lg:h-16 lg:px-6 ml-[-100px] lg:ml-0 lg:mr-[-120px] lg:hover:mr-0 hover:ml-[-10px] lg:hover:mr-0 hover:rounded-md duration-300 bg-gray-500" +
               " " +
               style
             }
