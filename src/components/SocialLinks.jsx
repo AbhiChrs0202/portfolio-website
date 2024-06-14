@@ -51,19 +51,25 @@ const SocialLinks = () => {
   return (
     <>
       {/* Floating button for smaller screens */}
-      <div className="lg:hidden fixed bottom-4 right-4">
+      <div className="lg:hidden fixed bottom-4 right-4 z-50">
         <button
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={() => setIsOpen(true)}
           className="bg-gray-500 text-white p-3 rounded-full shadow-md"
         >
-          {isOpen ? <FaTimes size={24} /> : <FaGithub size={24} />}
+          <FaGithub size={24} />
         </button>
       </div>
 
       {/* Modal for smaller screens */}
       {isOpen && (
         <div className="lg:hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
-          <div className="bg-gray-800 p-8 rounded-lg">
+          <div className="bg-gray-800 p-8 rounded-lg relative">
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-2 right-2  text-white p-2 rounded-full shadow-md"
+            >
+              <FaTimes size={15} />
+            </button>
             <ul>
               {links.map(({ id, child, href, download }) => (
                 <li key={id} className="flex justify-center my-4">
