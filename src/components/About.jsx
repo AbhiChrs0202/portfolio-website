@@ -16,10 +16,24 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center mt-8">
           <div className="md:w-3/5 text-xl mt-4 md:mt-0">
             <p>
-              Hey! I am Abhishek Chaurasia, I have recently earned my Bachelor of Science degree in Information Technology and am a dedicated and proficient full stack developer with expertise in the MERN stack (MongoDB, Express.js, React, and Node.js). My academic background and various projects have equipped me with robust skills in both front-end and back-end development, allowing me to create dynamic, responsive web applications from the ground up. I relish the opportunity to solve complex problems and am committed to continuously expanding my knowledge of new technologies to stay current in this fast-paced industry. My ambition is to utilize my technical skills and innovative thinking to craft solutions that improve user experiences and contribute to business growth. I am eager to begin my professional career and make meaningful contributions to significant projects as a member of a dynamic development team.
+              Hey! I am Abhishek Chaurasia, I have recently earned my Bachelor
+              of Science degree in Information Technology and am a dedicated and
+              proficient full stack developer with expertise in the MERN stack
+              (MongoDB, Express.js, React, and Node.js). My academic background
+              and various projects have equipped me with robust skills in both
+              front-end and back-end development, allowing me to create dynamic,
+              responsive web applications from the ground up. I relish the
+              opportunity to solve complex problems and am committed to
+              continuously expanding my knowledge of new technologies to stay
+              current in this fast-paced industry. My ambition is to utilize my
+              technical skills and innovative thinking to craft solutions that
+              improve user experiences and contribute to business growth. I am
+              eager to begin my professional career and make meaningful
+              contributions to significant projects as a member of a dynamic
+              development team.
             </p>
           </div>
-          <div className="md:w-2/5 mt-8 md:mt-0 flex justify-center">
+          <div className="hidden md:flex md:w-2/5 mt-8 md:mt-0 justify-center">
             <img
               src={AbhishekPic1}
               alt="My Photo"
