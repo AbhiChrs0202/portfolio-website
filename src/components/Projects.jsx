@@ -24,17 +24,9 @@ const Projects = () => {
       description:
         "Implemented Youtube API for playing trailers realtime on the web application and Netlify for deployment.",
     },
+   
     {
       id: 3,
-      src: cashflow,
-      name: "Utilized: React.js, Node.js, Express, MongoDB, Vercel",
-      url: "https://netflix-clone-9324.vercel.app/",
-      url2: "https://github.com/AbhiChrs0202/netflix-clone-0220",
-      description:
-        "Created a web application for finance tracking, offering a personalized user experience and secure authentication.",
-    },
-    {
-      id: 4,
       src: edufy,
       name: "Utilized: React.js, MUI, Vercel",
       url: "https://edufy-course.vercel.app/",
